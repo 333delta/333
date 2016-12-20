@@ -1,0 +1,1 @@
+var $radioList=$(".radio_box .radio_block");

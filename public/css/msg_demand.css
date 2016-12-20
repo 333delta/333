@@ -1,0 +1,23 @@
+body {
+  background-color: #efefef;
+}
+.tab_box {
+  height: 50px;
+  background-color: #fff;
+}
+.tab_bar {
+  display: flex;
+  width: 80%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+  border: 1px solid #f66;
+  color: #f66;
+}
+.tab_bar .tab_bar-cell {
+  flex: 1;
+  line-height: 30px;
+  text-align: center;
+}

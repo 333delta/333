@@ -1,0 +1,90 @@
+$orange = #ED692B
+body
+  background-color #efefef
+.tab_box
+  height 32px
+  padding 9px 0
+  background-color #fff
+.tab_bar
+  display flex
+  width 80%
+  height 30px
+  margin 0 auto
+  padding 0
+  list-style none
+  border-radius 5px
+  border 1px solid $orange
+  color $orange
+  .tab_bar-cell
+    position relative
+    flex 1
+    line-height 30px
+    text-align center
+    &:after
+      content ''
+      position absolute
+      top 0
+      right 0
+      display block
+      width 1px
+      height 30px
+      background-color $orange
+    &:last-child:after
+      content ''
+      display none
+    &.active
+      background-color $orange
+      color #fff
+
+.demand_cells
+  padding 15px
+
+.demand_cell
+  width 100%
+  min-height 100px
+  border-radius 5px
+  box-shadow 0 0 1px 1px #e0e0e0
+  line-height 30px
+  background-color #fff
+  .demand-title
+    display flex
+    height 30px
+    padding 0 10px
+    border-bottom 1px solid #cecece
+    .d-t-name
+      flex 1
+    .d-t-tag
+      display inline-block
+      width 50px
+      height 16px
+      margin 7px 0
+      padding 2px 0
+      border-radius 5px
+      background-color #0000ed
+      color #fff
+      line-height 16px
+      text-align center
+      font-style normal
+      font-size .6rem
+  .demand-info
+    margin 0
+    padding 10px
+    line-height 1.2em
+  .demand-footer
+    display flex
+    height 30px
+    padding 10px
+    line-height 30px
+    .btn-detail
+      width 100px
+      height 30px
+      border-radius 5px
+      border 1px solid #ececec
+      background-color #efefef
+      color #999988
+      text-align center
+    .text-time
+      flex 1
+      font-size .8rem
+      font-style normal
+      text-align right

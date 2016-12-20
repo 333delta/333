@@ -1,0 +1,124 @@
+@import '../head.styl'
+
+.header
+  position absolute
+  top 0
+  z-index 5
+  width 100%
+  color #fff
+  background-color transparent
+  .icon-back
+    width 65px
+    padding-left 15px
+    background transparent url("../../img/nav_icon_down@2x.png") no-repeat left 50px center
+    background-size 12px 6px
+    line-height 50px
+    font-style normal
+  .header_title
+    padding-right 80px
+
+.search_box
+  position absolute
+  top 50px
+  right 15px
+  left 15px
+  z-index 5
+  .search_input
+    height 30px
+    border-radius 3px
+    background-color #f1f1f1
+    text-align center
+    line-height 30px
+    color #999
+    .icon-search 
+      display inline-block
+      width 30px
+      height 30px
+      background url("../../img/nav_icon_search@2x.png") no-repeat center
+      background-size 16px
+      vertical-align bottom
+
+.slider_box
+  width 100%
+  height 320px
+  overflow hidden
+  .slider_container
+    width 300%
+    transition all .5s
+    transform translateX(0)
+    &:after
+      content ''
+      display block
+      visibility hidden
+      height 0
+      clear both
+.slider_block
+  float left
+  width 375px
+  height 320px
+  background-color #33acfe
+  &:nth-child(2)
+    background-color #0000ed
+  &:nth-child(3)
+    background-color #00ff00
+  &:nth-child(4)
+    background-color #ff6666
+  &:nth-child(5)
+    background-color #009926
+.point_box
+  position relative
+  top -30px
+  z-index 5
+  height 16px
+  text-align center
+  .point_block
+    display inline-block
+    width 16px
+    height 16px
+    background url("../../img/banner_icon_point_nor@2x.png") no-repeat center
+    background-size 10px
+    &.active
+      background url("../../img/banner_icon_point_press@2x.png") no-repeat center
+      background-size 10px
+
+.query_box
+  display flex
+  width 100%
+  height 50px
+  margin-top 10px
+  background-color #fff
+  .query_block
+    flex 1
+    &.active
+      background-color #0000ed
+    .text
+      display block
+      height 35px
+      text-align center
+      line-height 35px
+    .icon
+      display block
+      height 15px
+      background url("../../img/content_icon02_nor@2x.png") no-repeat center
+  .query_price
+    width 50px
+    height 50px
+    background url("../../img/content_icon01_nor@2x.png") no-repeat center
+    background-size 30px
+    &.active-down
+      background url("../../img/content_icon01_down@2x.png") no-repeat center
+      background-size 30px
+    &.active-up
+      background url("../../img/content_icon01_litre@2x.png") no-repeat center
+      background-size 30px
+
+.block_box
+  display flex
+  padding 15px
+  background-color #fff
+  .img_box
+    flex 2
+  .info_box
+    flex 5
+.down-box
+  display: none
